@@ -1,0 +1,76 @@
+.google-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.google-nav a { text-decoration: none; color: #000; }
+.google-nav a:hover { text-decoration: underline; }
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+  object-fit: cover;  /* สำคัญ: ช่วยให้รูปไม่เบี้ยวแม้สัดส่วนรูปเดิมจะไม่เป็นจัตุรัส */
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.google-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; /* เว้นระยะจากด้านบน */
+  font-family: sans-serif;
+}
+
+.logo { width: 272px; margin-bottom: 25px; }
+
+.search-container {
+  width: 100%;
+  max-width: 584px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.search-container:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.button-group button {
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-group button:hover { border: 1px solid #dadce0; box-shadow: 0 1px 1px rgba(0,0,0,0.1); }
+
+.lang-text { font-size: 13px; margin-top: 25px; }
+.lang-text a { color: #1a0dab; text-decoration: none; }

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+main {
+    border: 0.4em solid black;
+    margin: 30vh auto;
+    max-width: 600px;
+    background-color: lightskyblue;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 3px blue;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    
+}
+
+label , input{
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 0.5em;
+    font-weight: bolder;
+
+}
+input {
+    margin: 0.5em 0.5em;
+
+}
+button {
+    padding: 0.5em;
+    margin: 1em;
+    background-color: lightgreen;
+    border-radius: 0.5em;
+    font-weight: bolder;
+    font-size: 1em;
+    margin-top: 1em;
+    
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px blue;
+    scale: 1.2;
+}
+
+.Group {
+    text-align: center;
+}
+
+.Submit {
+    margin-bottom: 1em;
+}
+
+.Reset {
+    background-color: red;
+    color: white;
+    margin-left: 0.1em;
+}

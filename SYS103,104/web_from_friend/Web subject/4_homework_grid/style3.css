@@ -1,0 +1,149 @@
+:root {
+  --ikea-yellow: #ffda00;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Arial Black', sans-serif;
+  box-sizing: border-box;
+}
+
+.ikea-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 85vh;
+}
+
+/* --- Hero Card Setup --- */
+.hero-card {
+  background-image: url('https://images.unsplash.com/photo-1694875546238-67cb3596adf1?q=80&w=1500');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  /* เปลี่ยนจาก center เป็น flex-start เพื่อให้เนื้อหาเริ่มจากบนสุด */
+  justify-content: flex-start; 
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+}
+
+.ikea-logo {
+  font-size: 180px; /* เพิ่มขนาดตามต้องการ */
+  color: var(--ikea-yellow);
+  margin: 0;
+  margin-top: -10px; /* ดันขึ้นไปด้านบนสุด */
+  letter-spacing: -10px;
+  line-height: 0.8;
+}
+
+.ikea-logo sup {
+  font-size: 30px;
+  vertical-align: top;
+  margin-left: -15px;
+}
+
+/* ปรับเนื้อหาที่เหลือให้เว้นระยะจาก Logo */
+.hero-content {
+  text-align: center;
+  margin-top: auto; /* ดันเนื้อหาปุ่มลงไปด้านล่าง หรือกำหนด margin-top ตามความเหมาะสม */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* --- ส่วนที่แก้ไข: ลูกศรหนาขึ้นและตำแหน่ง --- */
+.footer-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.arrow-down {
+  font-size: 32px;
+  font-weight: 900; /* ทำให้หนาขึ้น */
+  margin-left: 30px; 
+  margin-bottom: 5px;
+  color: #ffffff;
+  /* คุณสามารถใช้สัญลักษณ์ตัวนี้ ⬇ ใน HTML เพื่อให้ดูหนาโดยธรรมชาติ */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-8px);}
+  60% {transform: translateY(-4px);}
+}
+
+/* --- ส่วนที่แก้ไข: กรอบปุ่มบางลงและยาวขึ้น --- */
+.cta-container {
+  display: inline-flex;
+  border-radius: 40px; 
+  overflow: hidden;
+  width: 400px; /* เพิ่มความยาวของกรอบ */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.cta-btn {
+  padding: 10px 25px; /* ลด padding แนวตั้งเพื่อให้กรอบดูบางลง */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.cta-btn.yellow { 
+  background: var(--ikea-yellow); 
+  color: #ffffff; /* เปลี่ยนจาก #000 เป็น #ffffff เพื่อให้เป็นสีขาวตามต้องการ */
+  flex: 0.35; 
+  justify-content: center;
+  /* หากต้องการให้ฟอนต์ดูหนาและชัดขึ้นบนพื้นสีเหลือง */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
+}
+
+.cta-btn.glass { 
+  background: rgba(255, 218, 0, 0.6); 
+  color: #fff; /* แก้ไขฟอนต์เป็นสีขาวตามภาพ */
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Side Panel --- */
+.side-panel {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.side-card {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,1); 
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-label { font-size: 18px; font-weight: bold; }
+
+.item-today { background-image: url('https://www.housedigest.com/img/gallery/the-simple-trick-that-makes-ikea-mosslanda-shelves-look-way-more-chic/intro-1730516227.webp'); }
+.item-about { background-image: url('https://www.malls.com/wp-content/uploads/2024/08/ruel_del_jamorol_v25_3iMFKzU_unsplash.jpg.webp'); }
+.item-museum { background-image: url('https://plus.unsplash.com/premium_photo-1661632275299-55fde9893123?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aWtlYSUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA=='); }
+.item-h22 { background-image: url('https://www.riba.org/media/njwfdinl/group-of-people-at-a-table-discussing-graphs-and-data-on-paper.jpg?width=640&height=360&format=webp&autoorient=true&v=1dc2c7cfb84e630'); }

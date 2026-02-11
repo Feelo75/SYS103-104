@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    border: 7px  solid black;
+    height: 1400px;
+    width: 2000px;
+}
+
+nav {
+    background: pink;
+    position: sticky;
+    top: 0px;
+}
+
+div {
+    /* font-size: 1.2rem;
+    border-radius: 0.5em; */
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    top: 13em;
+    left: 7em;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(62, 192, 20);
+    line-height: 50px;
+}
+
+.banner {
+    position: relative;
+    color: black;
+    background: rgb(192, 255, 238);
+    width: 120px;
+    border: 2px solid black;
+    left: 50%;
+    top: -12%;
+    transform: translate(-50%, 0);
+}
+
+span {
+    padding: 3px;
+    margin: 3px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0);
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+text {
+    position: absolute;
+    width: fit-content;
+    padding: 1em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+}
+
+.left {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translate(-50%, 0);
+    /* z-index: 1; */
+    background-color: white;
+    line-height: 30px;
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.bottom {
+    position: absolute;
+    top:88%;
+    right: -25%;
+    transform: translate(-50%, 0);
+    /* z-index: 1; */
+    background-color: white;
+    line-height: 30px;
+    width: 30%;
+    height: 20%;
+    border-radius: 45%;
+}
+
+.close {
+    position: absolute;
+    color: black;
+    background: rgb(237, 237, 237);
+    width: 20px;
+    border: 1px solid black;
+    right: -2%;
+    top: 0%;
+    transform: translate(-50%, 0);
+}

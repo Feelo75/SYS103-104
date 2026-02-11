@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* วิธีที่ง่ายที่สุด: ใส่ padding ให้ body เพื่อดันคอนเทนต์ทุกอย่างออกจากขอบจอ */
+  padding: 40px 20px; 
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* สีพื้นหลังช่วยให้เห็นขอบชัดขึ้น */
+}
+
+.bento-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px 100px 100px 40px;
+  
+  /* กำหนดพื้นที่ชื่อเล่นให้แต่ละกล่อง */
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box6 box7 box11 box11"
+    "box8 box10 box11 box11"
+    "box9 box10 box11 box11";
+
+  max-width: 1000px; /* จำกัดความกว้างเพื่อไม่ให้กว้างเกินไปบนจอคอม */
+  margin: 0 auto;    /* จัดให้อยู่กึ่งกลางหน้าจอในแนวนอน */
+}
+
+.box {
+  background: white;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* ส่วนนี้คือการระบุตำแหน่งตามพื้นที่ที่เราวาดไว้ใน grid-template-areas */
+.item-1 { grid-area: box1; }
+.item-2 { grid-area: box2; }
+.item-3 { grid-area: box3; }
+.item-4 { grid-area: box4; }
+.item-5 { grid-area: box5; }
+.item-6 { grid-area: box6; }
+.item-7 { grid-area: box7; }
+.item-8 { grid-area: box8; }
+.item-9 { grid-area: box9; }
+.item-10 { grid-area: box10; }
+.item-11 { grid-area: box11; }
+
+

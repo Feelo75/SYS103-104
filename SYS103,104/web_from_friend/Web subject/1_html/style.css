@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+}
+
+.box {
+    margin: 20px;
+    padding:  30px;
+    border: 15px solid white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 2rem;
+    background: red;
+}
+
+header {
+    text-align: center;
+    margin: 1em;
+}
+
+.head_text {
+    border: 2px solid black;
+    border-radius: 20px;
+    background: lightsalmon;
+}
+
+section {
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius:  20px;
+    background: lightcoral;
+}
+
+ul {
+    margin: 1em;
+}
+li {
+    margin: 1em;
+}
+
+h2{
+    text-align: center;
+    margin: 1em;
+    color: blue;
+}
+b {
+    color: g;
+}
+p {
+    margin: 1em;
+}
