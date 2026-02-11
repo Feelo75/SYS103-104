@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0.5em 2em;
+}
+
+.right {
+    display: none;
+}
+
+.hamburger {
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
+
+.line {
+    width: 2.5em;
+    height: 4px;
+    background: black;
+    margin-bottom: 6px;
+    border-radius: 2px;
+}
+
+
+section {
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    margin: 0.5em 3em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px black;
+    padding: 1.5em;
+}
+
+.container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 2em;
+}
+
+.card {
+    border: 2px solid black;
+    max-width: 18em;
+    border-radius: 1em;
+    justify-self: center;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 2px rgb(234, 137, 18);
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(213, 156, 41);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card div {
+    padding: 0.5em 1em;
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    padding: 1em;
+}
+
+.drawer-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 40vw;
+    padding: 1em; 
+    background: black;
+    color: white;
+    display: block;
+}
+
+.drawer-menu div {
+    padding: 0.3em 1em;
+    margin: 0.5em 1em;
+}
+
+.drawer-menu div:hover {
+    color: rgb(156, 162, 243) ;
+}
+
+.drawer-menu a {
+    color: rgb(163, 205, 250);
+    text-decoration: none;
+}
+
+/* PC Design */
+@media only screen and (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .right {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .right span {
+        margin-right: 1em;
+    }
+}
