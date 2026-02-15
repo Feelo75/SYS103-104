@@ -1,0 +1,12 @@
+.faded-image {
+  width: 100%;
+  height: auto;
+
+  /* คำสั่งหลัก: สร้างหน้ากากไล่สี */
+  /* จำเป็นต้องใส่ -webkit- นำหน้าเพื่อรองรับ Chrome/Safari รุ่นเก่าๆ ด้วย */
+  
+  /* ไล่จากซ้ายไปขวา: สีดำคือส่วนที่ชัด, transparent คือส่วนที่จาง */
+  object-fit: cover;
+    -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+          mask-image: linear-gradient(to right, black 50%, transparent 100%);
+}
